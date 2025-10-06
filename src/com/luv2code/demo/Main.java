@@ -8,6 +8,9 @@ public class Main {
 				System.out.println(i+" "+j);
 			}
 		}
+		for( int k = 0 ; k < n ; k++) {
+			System.out.println(k);
+		}
 		
 	}
 	
