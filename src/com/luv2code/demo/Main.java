@@ -1,20 +1,14 @@
 package com.luv2code.demo;
 
 public class Main {
-
-	
-	public static void printItems(int a , int b) {
-		for( int i = 0 ; i < a ; i++) {
-			System.out.println(i);
-		}
-		for( int i = 0 ; i < b ; i++) {
-			System.out.println(i);
-		}
-	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		printItems(10, 10);
+		Cookie cookieOne = new Cookie("green");
+		Cookie cookieTwo = new Cookie("blue");
+		cookieOne.setColor("yellow");
+		System.out.println(cookieOne.getColor());
+		System.out.println(cookieTwo.getColor());
 	}
 
 }
