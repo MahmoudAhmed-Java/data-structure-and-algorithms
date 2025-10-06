@@ -1,5 +1,7 @@
 package com.luv2code.linkedlist;
 
+import java.security.DrbgParameters.NextBytes;
+
 public class LinkedList {
 	private Node head;
 	private Node tail;
@@ -69,5 +71,16 @@ public class LinkedList {
 			tail = null;
 		}
 		return temp;
+	}
+	
+	public void prepend(int value) {
+		Node newNode = new Node(value);
+		if(length == 0) {
+			head = newNode;
+			tail = newNode;
+		} else {
+			newNode.next = head;
+			head = newNode;
+		}
 	}
 }
